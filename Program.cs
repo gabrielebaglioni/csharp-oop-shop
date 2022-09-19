@@ -33,9 +33,27 @@ public class Product
     public Product()
     {
         Random num = new Random();
-        this.code = num.Next();
+        this.code = num.Next(0,100);
     }
-  
+
+
+    public void SetName(string name)
+    {
+        this.name = name;
+    }
+    public void SetDescription(string description)
+    {
+        this.description = description;
+    }
+    public void SetPrice(decimal price)
+    {
+        this.price = price;
+    }
+    public void SetIva(int iva)
+    {
+        this.iva = iva;
+    }
+
     public int GetCode()
     {
         return this.code;
@@ -58,22 +76,7 @@ public class Product
     }
 
 
-    public void SetName(string name)
-    {
-        this.name = name;
-    }
-    public void SetDescription(string description)
-    {
-        this.description = description;
-    }
-    public void SetPrice(decimal price)
-    {
-        this.price = price;
-    }
-    public void SetIva(int iva)
-    {
-        this.iva = iva;
-    }
+    
 
 
 
