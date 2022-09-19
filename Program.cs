@@ -54,25 +54,26 @@ public class Product
         this.iva = iva;
     }
 
+
     public int GetCode()
     {
-        return this.code;
+        return code;
     }
     public string GetName()
     {
-        return this.name;
+        return name;
     }
     public string GetDescription()
     {
-        return this.description;
+        return description;
     }
     public decimal GetPrice()
     {
-        return this.price;
+        return price;
     }
     public int GetIva()
     {
-        return this.iva;
+        return iva;
     }
 
 
@@ -86,7 +87,7 @@ public class Product
     }
     public string GetFullName()
     {
-        return GetName() + GetCode();
+        return GetName() + " code=" + GetCode();
     }
     
 }
